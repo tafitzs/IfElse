@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var stringOne = "Yes"
+    var stringTwo = "No"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,20 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    //Create IB Action
+    @IBAction func changColorButtonPressed(_ sender: Any)
+    {
+        //have conditional evaluate to false
+        if stringOne == "No"
+        {
+            //if true, change background color to red
+            self.view.backgroundColor = UIColor.red
+        }
+        else
+        {
+            self.view.backgroundColor = UIColor.blue
+            
+        }
+    }
 }
 
